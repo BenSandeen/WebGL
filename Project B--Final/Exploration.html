@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exploration</title>
+  </head>
+
+  <body onload="main()" onresize="winResize()">
+    <div height="500" width="500" align="left"> 
+      <canvas id="webgl" width="450" height="450">
+      Please use a browser that supports "canvas"
+      </canvas>
+    </div>
+    <div height="500" width="500" align="right">
+      <p size="6" color="red" face="Garamond" style="text-align:left;">
+        Click the image to rotate the camera's orientation and use the WASD keys to move about.
+    </div>
+    <p>
+      <!--<button type="button" onclick="moreCCW()">++ CCW</button>
+      <button type="button" onclick="lessCCW()">-- CCW</button>
+      -->
+		<! these commands create a push-button withlabels ++ CCW and -- CCW.
+			When users click the button, call the function name held in 'onclick'>
+    </p>
+  <!-- Next, make an HTML 'input' box element, a text-box 10 chars wide where users
+    can type in text.  Give it an ID name so that our JavaScript program
+    (e.g. ControlMulti.js, loaded near the end of this file) can access this
+    HTML element by name in 
+  -->
+    <input id='usrAngle' size=10> 
+      <button type="button" onClick='angleSubmit()'>Submit</button><BR> 
+    </p>
+    <p>
+      <div id='Result'> Displays input! </div>
+    </p>
+    <script src="../StarterCode_Week05/lib/webgl-utils.js"></script>
+    <script src="../StarterCode_Week05/lib/webgl-debug.js"></script>
+    <script src="../StarterCode_Week05/lib/cuon-utils.js"></script>
+    <script src="../StarterCode_Week05/lib/cuon-matrix-mod.js"></script>
+    <script src="../StarterCode_Week05/lib/cuon-matrix-quat.js"></script>
+    <script src="Objects.js"></script>
+    <script src="Backup Exploration.js"></script>
+  </body>
+</html>
